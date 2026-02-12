@@ -73,3 +73,6 @@ tabela_pivot = tabela_visual.pivot(index='Mês (Safra)', columns='Convênio', va
 
 print(tabela_pivot.fillna('-')) 
 print('-' * 60)
+print('maior taxa média:')
+print(tabela_visual.loc[tabela_visual['taxa_ponderada'].idxmax()])
+
